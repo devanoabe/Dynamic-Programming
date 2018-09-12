@@ -15,6 +15,8 @@ public class HitungFibonaci {
       int n = tampilInput();
       
       BigInteger hasil = fibo(n);
+      
+      tampilHasil(n, hasil);
 
     } 
     
@@ -51,5 +53,9 @@ public class HitungFibonaci {
           return hasil[n - 1];
       }  
    
+    private static void tampilHasil(int n, BigInteger hasil)
+      {
+          System.out.println("Bilangan Fibonaci ke - " + n + " : " + hasil);
+      }
      
 }
