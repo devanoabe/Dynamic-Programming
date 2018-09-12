@@ -11,6 +11,8 @@ public class HitungFibonaci {
     {
       String identitas = "Devano Abe/XRPL 3/12"; 
       tampilJudul(identitas);
+      
+      int n = tampilInput();
 
     } 
     
@@ -21,6 +23,17 @@ public class HitungFibonaci {
         System.out.println("1, 1, 2, 3, 5, 8, 13, 21, ....dst.\n");
      
     }
+    
+    private static int tampilInput()
+      {
+          Scanner scanner = new Scanner (System.in);
+          
+          System.out.println("Bilangan ke - ");
+          int n = scanner.nextInt();
+          
+          return n;
+          
+      }
    
      
 }
