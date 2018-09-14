@@ -17,6 +17,28 @@ public class Tugas2 {
         
         tampilJudul(identitas);
         
+        tampilJudul(identitas);
+        System.out.println("7KG = Rp. 10.000");
+        System.out.println("5Kg = Rp. 7.000");
+        System.out.println("4Kg = Rp. 5.000");
+        System.out.println("3Kg = Rp. 3.000");
+        System.out.println("2Kg = Rp. 2.000");
+        int[] Berat = new int[]{7, 5, 4, 3, 2};
+        int[] Harga = new int[]{10000, 7000, 5000, 3000, 2000};
+        
+        int berat = input();
+        
+       
+    }
+    private static int input()
+    {
+        Scanner baca = new Scanner(System.in);
+        
+        System.out.print("Berat Barang : ");
+        int berat = baca.nextInt();
+        System.out.println();
+        return berat;
+    }
     }
     
-}
+
